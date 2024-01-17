@@ -11,8 +11,8 @@ const Navbar = () => {
         setMenu(false)
     }
   return (
-    <div className='w-full h-full'>
-        <div className='flex flex-row justify-center h-full items-center gap-6 p-2'>
+    <div className='h-full'>
+        <div className='flex justify-between md:justify-center  h-full  border gap-6 p-2'>
             <div>
                 <h1 className='italic text-xl'>Gymania</h1>
             </div>
@@ -23,16 +23,18 @@ const Navbar = () => {
                     <li>About</li>
                     <li>Contact</li>   
                 </ul>
-            </div>
-            <div>
+                <div>
                 <CgGym size={27} className='cursor-pointer md:hidden' onClick={handleOpen} />
             </div>
+            </div>
+            
+             
         </div>
         {
             menu &&
-                <div className='w-[300px] h-full top-0 inset-0 z-50 bg-blue-400'>
-                    <div className=' h-screen   p-2 ease-in-out duration-300'>
-                    <ul className='flex flex-col gap-2 text-xl inset-0 top-0 z-50 w-full h-full '>
+                <div className=''>
+                    <div className='p-2 '>
+                    <ul className='flex flex-col gap-2 fixed text-3xl top-0 p-4 bg-blue-400 w-full h-screen ease-in-out duration-300  '>
                     <MdClose size={27}onClick={handleClose} />
                     <li>Home</li>
                     <li>Plans</li>
@@ -43,6 +45,7 @@ const Navbar = () => {
                 </div>
             
         }
+       
     </div>
   )
 }
