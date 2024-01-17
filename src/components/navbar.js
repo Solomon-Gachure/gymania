@@ -12,7 +12,7 @@ const Navbar = () => {
     }
   return (
     <div className='h-full'>
-        <div className='flex justify-between md:justify-center  h-full  border gap-6 p-2'>
+        <div className='flex justify-between md:justify-center  h-full  border border-stone-50 gap-6 p-2'>
             <div>
                 <h1 className='italic text-xl'>Gymania</h1>
             </div>
