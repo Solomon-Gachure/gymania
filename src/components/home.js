@@ -1,12 +1,16 @@
-import React from 'react'
-
+import React, { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 const Home = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className='h-full'>
         <div className='lg:flex lg:justify-between lg:gap-8'>
           {/**heading and topic */}
-          <div className='p-6 flex flex-col justify-center items-center' >
-          <h1 className='text-5xl lg:text-7xl font-extrabold'>Your <span className='text-cyan-700'>Health</span></h1>
+          <div className='p-6 flex flex-col justify-center items-center ' data-aos="fade-up" >
+          <h1  className='text-5xl lg:text-7xl font-extrabold'>Your <span className='text-cyan-700'>Health</span></h1>
           <h1 className='text-4xl lg:text-7xl font-bold'>Your <span className='text-cyan-700'>Wealth</span></h1>
           <br/>
           <div className='text-center lg:max-w-md mx-auto' data-aos="fade-up"data-aos-duration="3000">
