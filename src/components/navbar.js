@@ -34,7 +34,7 @@ const Navbar = () => {
             menu &&
                 <div className='transition-transform delay-700 duration-300 ease-in-out '>
                     <div className='p-2 '>
-                    <ul className='flex flex-col gap-2 fixed text-3xl top-0 p-4 bg-cyan-700 text-white w-full h-screen   '>
+                    <ul className='flex flex-col gap-2 z-50 fixed text-3xl top-0 p-4 bg-cyan-700 text-white w-full h-screen   '>
                     <MdClose size={27}onClick={handleClose} />
                     <li>Home</li>
                     <li>Plans</li>
