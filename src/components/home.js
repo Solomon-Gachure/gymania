@@ -21,7 +21,7 @@ const Home = () => {
           </div>
           {/**hero section */}
           <div>
-<img className='hidden lg:flex'
+<img className='hidden object-cover h-full lg:flex'
 src="https://img.freepik.com/free-photo/man-with-dumbbell_144627-11522.jpg?size=626&ext=jpg&uid=R114683630&ga=GA1.2.134876288.1693412887&semt=ais" alt="" />
           </div>
         </div>
