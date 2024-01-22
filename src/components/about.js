@@ -34,7 +34,7 @@ const About = () => {
         {/**header */}
         <div className='flex flex-col items-center p-2 lg:max-w-4xl'>
           <h1 className='text-center text-4xl md:text-5xl border-b p-1 text-white font-semibold'>Who are We?</h1>
-          <p className='text-center mt-2 text-stone-700 md:text-xl lg:p-2'>
+          <p className='text-center mt-2 font-semibold text-stone-700 md:text-xl lg:p-2'>
         Gymania stands as the paramount fitness destination, excelling in every aspect. Its exceptional trainers inspire and guide with expertise, while state-of-the-art equipment elevates workouts. With an unwavering commitment to fair prices, Gymania makes premium fitness accessible to all. The results achieved by members speak volumes, solidifying Gymania's status as the epitome of a well-rounded, affordable, and results-driven gym experience.
         </p>
         </div>
@@ -56,16 +56,39 @@ const About = () => {
         </div>
         {/**meet the team */}
         <div>
-<h1>Meet the Team</h1>
-<div>
-  <div>
-    <img 
-    src="https://media.istockphoto.com/id/1007997758/photo/pregnant-athlete-in-studio.jpg?s=612x612&w=0&k=20&c=oM8CXa0hh9tUa_dBPThzzohdoaerqEpKq55fHAhWyZI=" alt="" />
+<h1 className='text-center pt-2 text-2xl md:text-3xl text-white '>Meet the Team</h1>
+<div className='p-2 grid md:grid-cols-3 gap-3'>
+  <div className='h-[320px] w-[300px] border border-black rounded-lg bg-stone-900 hover:scale-105 duration-300'>
+    <img className='w-full object-cover h-[250px] rounded-t-lg'
+    src="https://media.istockphoto.com/id/1385325176/photo/pretty-young-woman-with-curly-hair-in-casual-clothing-looking-with-a-serious-expression-at.jpg?s=612x612&w=0&k=20&c=hd5ULsBANDovdYrz-xM5s0sxCN7f6X0OIcQmaOhTqJ0=" alt="" />
+  <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" className='flex flex-col p-2'>
+    <h1 className='text-xl font-bold text-white '>Salome Sol <br/> Ladies Head & Cardial Head</h1>
+  </div>
+  </div>
+  <div className='h-[320px] w-[300px] border border-black rounded-lg bg-stone-900 hover:scale-105 duration-300'>
+    <img className='w-full object-cover h-[250px] rounded-t-lg'
+    src="https://media.istockphoto.com/id/675179390/photo/muscular-trainer-writing-on-clipboard.jpg?b=1&s=612x612&w=0&k=20&c=f4_W9X06NAw8EThQc2ogMYbNsUtVEHrNUgVc7Lwy56k=" alt="" />
+  <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" className='flex flex-col p-2'>
+    <h1 className='text-xl font-bold text-white '>Tony Blake <br/> Head of Operations</h1>
+  </div>
+  </div>
+  <div className='h-[320px] w-[300px] border border-black rounded-lg bg-stone-900 hover:scale-105 duration-300'>
+    <img className='w-full object-cover h-[250px] rounded-t-lg'
+    src="https://images.pexels.com/photos/863926/pexels-photo-863926.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
+  <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" className='flex flex-col p-2'>
+    <h1 className='text-xl font-bold text-white '>Chiki Chan <br/> Injury recovery & Yoga</h1>
+  </div>
   </div>
 </div>
         </div>
-        <div>
-          <h1 className='text-center text-xl pb-2 text-white'>Check out our gym:</h1>
+        <div className='p-2'>
+          <h1 className='text-center text-2xl md:text-3xl pb-2 text-white'>Check out our gym:</h1>
           <ImageSlider photos={photos} />
         </div>
         
