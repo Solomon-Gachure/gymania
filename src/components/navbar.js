@@ -21,6 +21,7 @@ const Navbar = () => {
                     <li className='hover:text-cyan-700 cursor-pointer font-semibold text-gray-500'>Home</li>
                     <li className='hover:text-cyan-700 cursor-pointer font-semibold text-gray-500'>Plans</li>
                     <li className='hover:text-cyan-700 cursor-pointer font-semibold text-gray-500'>About</li>
+                    <li className='hover:text-cyan-700 cursor-pointer font-semibold text-gray-500'>Exercises</li>
                     <li className='hover:text-cyan-700 cursor-pointer font-semibold text-gray-500'>Contact</li>   
                 </ul>
                 <div>
@@ -39,6 +40,7 @@ const Navbar = () => {
                     <li>Home</li>
                     <li>Plans</li>
                     <li>About</li>
+                    <li>Exercises</li>
                     <li>Contact</li>   
                 </ul>
                 </div>

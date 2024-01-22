@@ -1,4 +1,6 @@
 import About from "./components/about";
+import Contacts from "./components/contacts";
+import Exercises from "./components/exercises";
 import Home from "./components/home";
 import Navbar from "./components/navbar";
 import Plans from "./components/plans";
@@ -11,6 +13,9 @@ function App() {
       <Home/>
       <Plans/>
       <About/>
+      <Exercises/>
+      <Contacts/>
+      
     </div>
   );
 }
