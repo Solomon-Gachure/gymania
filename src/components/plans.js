@@ -8,7 +8,7 @@ const Plans = () => {
   }, []);
   return (
     
-    <div className=' h-screen text-gray-500 font-semibold'>
+    <div className=' h-full text-gray-500 font-semibold'>
       <div className='flex justify-center' data-aos="zoom-in">
         <h1 className='text-center text-4xl md:text-5xl border-b p-1 text-cyan-700'>Checkout Our Plans</h1>
       </div>
