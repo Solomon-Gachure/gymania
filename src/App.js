@@ -13,7 +13,7 @@ function App() {
       <Home/>
       <Plans/>
       <About/>
-      <Exercises/>
+      
       <Contacts/>
       
     </div>
