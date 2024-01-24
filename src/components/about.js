@@ -29,8 +29,8 @@ const About = () => {
     );
   }
   return (
-    <div name='about' className='bg-cyn-700/40  h-full'>
-      <div className='flex flex-col items-center p-2'>
+    <div name='about' className='h-full'>
+      <div className='flex flex-col items-center p-2 font-roboto'>
         {/**header */}
         <div className='flex flex-col items-center p-2 lg:max-w-4xl'>
           <h1 className='text-center text-4xl md:text-5xl border-b p-1 text-cyan-700 font-semibold'>Who are We?</h1>
@@ -42,7 +42,7 @@ const About = () => {
         <div>
           <div className='relative'>
             <div className='flex max-w-sm'>
-              <h1 data-aos="fade-up" className='absolute z-10 text-2xl md:text-5xl w-[250px] md:w-[400px] text-white font-extrabold p-4 '>
+              <h1 data-aos="fade-up" className='absolute z-10 font-roboto text-2xl md:text-5xl w-[250px] md:w-[400px] text-white font-extrabold p-4 '>
               "No wealth is greater than your health, and there's no destination in fitness!" Bony <br/>
              <span className='text-cyn-500'> ~head Trainer</span>
             </h1>
@@ -88,11 +88,15 @@ const About = () => {
 </div>
         </div>
         <div className='p-2'>
-          <h1 className='text-center text-2xl md:text-3xl pb-2 text-cyan-700'>Check out our gym:</h1>
+          <h1 className='text-center font-roboto text-2xl md:text-3xl pb-2 text-cyan-700'>Check out our gym:</h1>
           <ImageSlider photos={photos} />
         </div>
         
       </div>
+      <div className='font-mono flex justify-center gap-4 md:text-2xl text-yellow-500 items-center border bg-cyan-700 w-full md:h-[100px] p-2 '>
+<h1>Start the Journey with us Today!</h1>
+<button className='border p-2 hover:bg-white hover:text-cyan-700'>Join Now</button>
+        </div>
       </div>
   )
 }

@@ -7,7 +7,7 @@ const Home = () => {
     AOS.init();
   }, []);
   return (
-    <div name='home' className='h-full pt-4'>
+    <div name='home' className='h-full pt-10'>
         <div className='lg:flex lg:justify-between lg:gap-8'>
           {/**heading and topic */}
           <div className='p-6 flex flex-col justify-center items-center ' data-aos="fade-up" >
@@ -18,7 +18,7 @@ const Home = () => {
             <p className='font-mono text-xl lg:text-2xl text-gray-500'>We open doors to help you find balance with great health. Through healthy fitness exercises with our highly trained personel.</p>
           </div>
           <br/>
-          <button className='bg-cyan-700 rounded-3xl p-3 text-xl text-white'>
+          <button className='bg-cyan-700 rounded-3xl font-mono p-3 text-xl text-white'>
             <Link activeClass="active" to="about"  smooth={true} offset={50} duration={500} >
                         Get started
                     </Link>

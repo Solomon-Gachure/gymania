@@ -12,8 +12,8 @@ const Navbar = () => {
         setMenu(false)
     }
   return (
-    <div className='h-full'>
-        <div className='flex md:justify-center gap-64 p-3  fixed  bg-whit w-full  md:gap-8 z-50 bg-opacity-60 backdrop-blur-lg backdrop-filter:blur(8px) bg-clip-padding'>
+    <div className='h-full font-mono'>
+        <div className='flex md:justify-center gap-64 p-2 md:p-3  fixed  bg-whit w-full  md:gap-8 z-50 bg-opacity-60 backdrop-blur-lg backdrop-filter:blur(8px) bg-clip-padding'>
             <div>
                 <h1 className='italic text-xl text-cyan-700 font-bold'>Gymania</h1>
             </div>

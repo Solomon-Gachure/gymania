@@ -8,7 +8,7 @@ const Contacts = () => {
     window.location.href = whatsappUrl;
   }
   return (
-    <div name='contacts' className='h-full'>
+    <div name='contacts' className='h-full font-roboto'>
       <div>
         <h1 className='text-center text-4xl md:text-5xl p-1 text-cyan-700'>Reach us through:</h1>
         <div>
