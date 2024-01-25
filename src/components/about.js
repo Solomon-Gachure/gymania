@@ -3,6 +3,8 @@ import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 const About = () => {
+  
+  
   const photos=[
     'https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGd5bXxlbnwwfHwwfHx8MA%3D%3D',
     'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3ltfGVufDB8fDB8fHww',
@@ -93,10 +95,48 @@ const About = () => {
         </div>
         
       </div>
-      <div className='font-mono flex justify-center gap-4 md:text-2xl text-yellow-500 items-center border bg-cyan-700 w-full md:h-[100px] p-2 '>
+      <div className='font-mono flex flex-col justify-center gap-2 md:text-2xl text-yellow-500 items-center border bg-cyan-700 w-full md:h-[300px] p-2 '>
 <h1>Start the Journey with us Today!</h1>
-<button className='border p-2 hover:bg-white hover:text-cyan-700'>Join Now</button>
+
+<div className=' p-2'>
+  <form action="https://getform.io/f/db96c5fb-9063-4883-a850-e833759e93be" method="post">
+    <div className='w-full p-2'>
+    <select className='text-lg text-stone-300 w-full p-1 outline-none border bg-transparent' name="package" id="" required>
+  <option value="">Select Your Package </option>
+  <option value="">Basic Package </option>
+  <option value="">Standard Package </option>
+  <option value="">Gold Package </option>
+              </select>
+  </div>
+  <div className=' w-full grid grid-cols-2 gap-4'>
+    <div className='flex flex-col gap-2 text-xl'>
+<input type="text" name='first name' className='p-1 bg-transparent border text-stone-300 outline-none' placeholder='First Name' required />
+<input type="text" name='email' className='p-1 bg-transparent border text-stone-300 outline-none' placeholder='Email' required />
+<select className='font-mono text-xl p-1 bg-transparent border text-stone-300 outline-none' name="" id="" required >
+  <option value="">Gender</option>
+  <option value="">Male</option>
+  <option value="">Female</option>
+  <option value="">Other</option> 
+              </select>
+    </div>
+    <div className='flex flex-col gap-2 text-xl'>
+<input type="text" name='second name' className='p-1 bg-transparent border text-stone-300 outline-none' placeholder='Second Name' required />
+<input type="text" name='phone no' className='p-1 bg-transparent border text-stone-300 outline-none' placeholder='Phone No.' required />
+<select className='font-mono text-xl p-1 bg-transparent border text-stone-300 outline-none' name="training" id="" >
+  <option value="">Training Time</option>
+  <option value="">Morning</option>
+  <option value="">Afternoon</option>
+  <option value="">Evening</option> 
+              </select>
+    </div>
+  </div>
+  <div className='p-2 flex items-center justify-center'>
+    <button  className='border p-1 text-lg hover:bg-white hover:text-cyan-700'  >Join Now</button>
+  </div>
+  </form>
+</div>
         </div>
+        
       </div>
   )
 }
