@@ -101,7 +101,7 @@ const About = () => {
 <div className=' p-2'>
   <form action="https://getform.io/f/db96c5fb-9063-4883-a850-e833759e93be" method="post">
     <div className='w-full p-2'>
-    <select className='text-lg text-stone-300 w-full p-1 outline-none border bg-transparent' name="package" id="" required>
+    <select className='text-lg text-stone-300 w-full p-1 md:p-2 outline-none border bg-transparent' name="package" id="" required>
   <option value="">Select Your Package </option>
   <option value="">Basic Package </option>
   <option value="">Standard Package </option>
@@ -109,7 +109,7 @@ const About = () => {
               </select>
   </div>
   <div className=' w-full grid grid-cols-2 gap-4'>
-    <div className='flex flex-col gap-2 text-xl'>
+    <div className='flex flex-col gap-2 md:gap-3 text-xl'>
 <input type="text" name='first name' className='p-1 bg-transparent border text-stone-300 outline-none' placeholder='First Name' required />
 <input type="text" name='email' className='p-1 bg-transparent border text-stone-300 outline-none' placeholder='Email' required />
 <select className='font-mono text-xl p-1 bg-transparent border text-stone-300 outline-none' name="" id="" required >
@@ -119,7 +119,7 @@ const About = () => {
   <option value="">Other</option> 
               </select>
     </div>
-    <div className='flex flex-col gap-2 text-xl'>
+    <div className='flex flex-col gap-2 md:gap-3 text-xl'>
 <input type="text" name='second name' className='p-1 bg-transparent border text-stone-300 outline-none' placeholder='Second Name' required />
 <input type="text" name='phone no' className='p-1 bg-transparent border text-stone-300 outline-none' placeholder='Phone No.' required />
 <select className='font-mono text-xl p-1 bg-transparent border text-stone-300 outline-none' name="training" id="" >
