@@ -17,7 +17,7 @@ const Contacts = () => {
               <input className=' p-2 w-[180px] md:w-full outline-none bg-transparent  border rounded-sm' required type="text" name='name' placeholder='Name' />
               <input className=' p-2 w-[180px] md:w-full outline-none bg-transparent  border rounded-sm' required type="text" name='email'  placeholder='Email' />
             </div>
-            <textarea className='md:w-[500px] w-[350px] p-2 outline-none bg-transparent border rounded-sm' required name="message" placeholder='Message' id="" cols="30" rows="10"></textarea>
+            <textarea className='md:w-[500px] w-[350px] p-2 outline-none bg-transparent border rounded-sm' required name="message" placeholder='Message' id="" cols="30" rows="5"></textarea>
             <button className='text-white bg-cyan-500 p-2 w-[200px] font-bold rounded-sm text-xl'>Submit</button>
           </form>
         </div>

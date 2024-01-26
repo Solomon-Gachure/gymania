@@ -51,7 +51,7 @@ const About = () => {
            
             </div>
             
-            <img data-aos="zoom-out-down" className='relative rounded-lg'
+            <img  className='relative rounded-lg'
              src="https://img.freepik.com/free-photo/athletic-man-exercising-with-weights-copy-space_23-2148398859.jpg?size=626&ext=jpg&uid=R114683630&ga=GA1.2.134876288.1693412887&semt=ais" alt="" />
           <div className='bg-black/20 absolute inset-0 rounded-lg  w-full h-full'/>
           </div>
