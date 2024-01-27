@@ -95,7 +95,7 @@ const About = () => {
         </div>
         
       </div>
-      <div className='font-mono flex flex-col justify-center gap-2 md:text-2xl text-yellow-500 items-center border bg-cyan-700 w-full md:h-[300px] p-2 '>
+      <div className='font-mono flex flex-col justify-center gap-2 md:text-2xl text-yellow-500 items-center  bg-cyan-700 w-full md:h-[300px] p-2 '>
 <h1>Start the Journey with us Today!</h1>
 
 <div className=' p-2'>
