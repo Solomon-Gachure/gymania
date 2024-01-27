@@ -3,7 +3,7 @@ import {FaFacebook, FaInstagram, FaTiktok, FaWhatsapp} from 'react-icons/fa'
 const Contacts = () => {
   const WhatsAppLink = ()=>{
     const number='+254798605270'
-    const message="welcome to dee makeup services!"
+    const message="welcome to gymania fitness gym!"
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${number}&text=${encodeURIComponent(message)}`;
     window.location.href = whatsappUrl;
   }
