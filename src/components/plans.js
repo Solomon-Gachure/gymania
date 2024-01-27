@@ -1,18 +1,28 @@
-  import React, {useEffect} from 'react'
+  import React, {useEffect, useState} from 'react'
   import { TiTickOutline } from "react-icons/ti";
   import AOS from 'aos'
   import 'aos/dist/aos.css';
   const Plans = () => {
+    //for the sign up pop up
+    const [pop, setPop]=useState(false)
+    
+    const openPop=()=>{
+      setPop(true)
+    }
+    const closePop=()=>{
+      setPop(false)
+    }
+    
     useEffect(() => {
       AOS.init();
     }, []);
     return (
       
-      <div name='plans' className=' h-full text-gray-500 font-semibold'>
+      <div name='plans' className=' h-full text-gray-500 font-semibold relative'>
         <div className='flex justify-center' data-aos="zoom-in">
           <h1 className='text-center text-4xl md:text-5xl border-b p-1 text-cyan-700'>Checkout Our Plans</h1>
         </div>
-  <div className='flex flex-col md:items-center font-roboto '>
+  <div className='flex flex-col md:items-center font-roboto  '>
     <div className='grid md:grid-cols-3 p-3 md:p-6 gap-2 md:gap-6 ' >
     {/**plans cards */}
     <div data-aos="fade-right" className='border rounded-lg  bg-gray-100/60 flex flex-col items-center justify-center p-2 mx-auto md:mx-0 h-[300px]   md:h-[400px] hover:bg-stone-900 hover:text-stone-50 '>
@@ -28,7 +38,7 @@
     <li className='flex items-center'> <TiTickOutline />Meets with trainer.</li>
     <li className='flex items-center'> <TiTickOutline />2 training programs.</li>
   </ol>
-  <button className='border font-bold p-2 mt-4'>Sign Up</button>
+  <button onClick={openPop} className='border font-bold p-2 mt-4'>Sign Up</button>
     </div>
     <div data-aos="fade-down" className='border rounded-lg bg-gray-100/60 flex flex-col items-center justify-center p-2 mx-auto md:mx-0 h-[300px]   md:h-[400px] hover:bg-stone-900 hover:text-stone-50 '>
       {/**headings */}
@@ -43,7 +53,7 @@
     <li className='flex items-center'> <TiTickOutline />Training with trainer.</li>
     <li className='flex items-center'> <TiTickOutline />6 training programs.</li>
   </ol>
-  <button className='border font-bold p-2 mt-4'>Sign Up</button>
+  <button onClick={openPop} className='border font-bold p-2 mt-4'>Sign Up</button>
     </div>
     <div data-aos="fade-left" className='border rounded-lg bg-gray-100/60 flex flex-col items-center justify-center p-2 mx-auto md:mx-0  h-[300px]   md:h-[400px] hover:bg-stone-900 hover:text-stone-50 '>
       {/**headings */}
@@ -58,10 +68,27 @@
     <li className='flex items-center'> <TiTickOutline />Training with trainer.</li>
     <li className='flex items-center'> <TiTickOutline />8 training programs.</li>
   </ol>
-  <button className='border font-bold p-2 mt-4'>Sign Up</button>
+  <button onClick={openPop} className='border font-bold p-2 mt-4'>Sign Up</button>
     </div>
   </div>
   </div>
+  {
+  pop &&(
+    <div className='p-2 flex flex-col items-center w-full h-full bg-cyan-900 top-0 absolute z-50 inset-0  justify-center'>
+      <h1 className='text-4xl p-2 font-roboto text-white'>Sign up Today!</h1>
+      <form className='flex flex-col font-roboto p-4 border rounded-lg h-[300px] w-[300px] gap-2 bg-white' action="https://getform.io/f/db96c5fb-9063-4883-a850-e833759e93be" method="post">
+        <input className='p-2 outline-none bg-transparent  border rounded-sm' name='name' type="text" placeholder='Enter Name' required />
+        <input className='p-2 outline-none bg-transparent  border rounded-sm' name='email' type="text" placeholder='Enter Email' required />
+        <input className='p-2 outline-none bg-transparent  border rounded-sm' name='username' type="text" placeholder='Enter Username' required />
+        <input className='p-2 outline-none bg-transparent  border rounded-sm' name='password' type="text" placeholder='Enter Password' required />
+        <div className='gap-2 flex'>
+          <button className='border p-1 text-lg hover:bg-white hover:text-cyan-700'>Sign up</button>
+          <button onClick={closePop} className='text-cyan-700'>Go back</button>
+        </div>
+      </form>
+    </div>
+  )
+}
   {/**process of gym */}
 <div className='font-roboto'>
   <div className='font-roboto'>
@@ -111,6 +138,7 @@
 </div>
   </div>
 </div>
+
       </div>
 
     )
